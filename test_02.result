@@ -1,0 +1,30 @@
+1 - add(1 - push, 2 - insert  by iterator(enter index new elem)
+2 - delete(1 - pop, 2 - delete by iterator(enter index)
+3 - top
+4 - print
+5 - count if(enter max area)
+6 - exit
+coordinate:
+{
+1 1
+1 1
+1 1
+1 1
+1 1
+}
+coordinate:
+{
+0 0
+0 0
+0 0
+0 0
+0 0
+}
+coordinate:
+{
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+}

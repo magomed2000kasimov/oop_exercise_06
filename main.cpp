@@ -16,7 +16,7 @@ void menu() {
 void usingStack() {
     int command, minicommand,index;
     double val;
-    cntr::Stack<pentagon<double>,myal::my_allocator<pentagon<double>,10000>> st;
+    cntr::Stack<pentagon<double>,myal::my_allocator<pentagon<double>,170>> st;
     for (;;) {
         std::cin >> command;
         if (command == 1) {
@@ -88,19 +88,16 @@ void usingStack() {
 }
 
 int main() {
-    //menu();
-    //usingStack();
+    menu();
+    usingStack();
     std::map<int, int, std::less<int>,
-    myal::my_allocator<std::pair<const int, int>, 100>> mp;
+    myal::my_allocator<std::pair<const int, int>, 80>> mp;
     for(int i = 0; i < 2; ++i){
-        mp[i] = i * i;
+        mp[i] = i;
     }
     for(int i = 2; i < 10; ++i){
         mp.erase(i - 2);
-        mp[i] = i * i;
-    }
-    for (auto elem : mp) {
-        std::cout << elem.first;
+        mp[i] = i + 3;
     }
     return 0;
 }
