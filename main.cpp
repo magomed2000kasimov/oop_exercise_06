@@ -16,7 +16,7 @@ void menu() {
 void usingStack() {
     int command, minicommand,index;
     double val;
-    cntr::Stack<pentagon<double>,myal::my_allocator<pentagon<double>,170>> st;
+    cntr::Stack<pentagon<double>,myal::my_allocator<pentagon<double>,330>> st;
     for (;;) {
         std::cin >> command;
         if (command == 1) {
