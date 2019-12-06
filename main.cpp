@@ -37,7 +37,8 @@ void usingStack() {
                 }
             } }
 	catch(std::bad_alloc& e) {
-		std::cout << e.what() << std::endl;                                                                                                                                                                                                          std::cout << "memory limit\n";   
+		std::cout << e.what() << std::endl;                                                                                                                                                                                                          
+		std::cout << "memory limit\n";   
 		continue; }
         } else if (command == 6) {
             break;
