@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/magomed/oop6/oop_exercise_06/main.cpp" "/home/magomed/oop6/oop_exercise_06/build/CMakeFiles/oop_exercise_06.dir/main.cpp.o"
+  "/home/magomed/utechka/oop_exercise_06/main.cpp" "/home/magomed/utechka/oop_exercise_06/build3/CMakeFiles/oop_exercise_06.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

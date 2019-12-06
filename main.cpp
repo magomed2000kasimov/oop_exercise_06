@@ -19,8 +19,9 @@ void usingStack() {
     cntr::Stack<pentagon<double>,myal::my_allocator<pentagon<double>,330>> st;
     for (;;) {
         std::cin >> command;
-        if (command == 1) {
-            std::cin >> minicommand;
+	    if (command == 1) {
+            try {
+	    std::cin >> minicommand;
             if (minicommand == 1) {
                 pentagon<double> p(std::cin);
                 st.Push(p);
@@ -32,9 +33,12 @@ void usingStack() {
 
                 } catch (std::logic_error &e) {
                     std::cout << e.what() << std::endl;
-                    continue;
+		    continue;
                 }
-            }
+            } }
+	catch(std::bad_alloc& e) {
+		std::cout << e.what() << std::endl;                                                                                                                                                                                                          std::cout << "memory limit\n";   
+		continue; }
         } else if (command == 6) {
             break;
         } else if (command == 2) {
